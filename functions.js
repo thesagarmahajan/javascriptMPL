@@ -1,5 +1,5 @@
 /* -----------Example-1----------- */
-/* function addition(num1, num2){
+function addition(num1, num2){
     return num1+num2;
 }
 
@@ -10,10 +10,10 @@ if(ans%2 == 0){
 }
 else{
     document.write("Addition is a odd number!");
-} */
+} 
 
 /* -----------Example-2----------- */
-/* function primeOrNot(no){
+function primeOrNot(no){
 
     var count = 0;
     for(i=1;i<=no;i++){
@@ -38,7 +38,7 @@ if(primeOrNot(5)){
 }
 else{
     alert("You cannot use this number in encryption algorithms.");
-} */
+}
 
 /* -----------Example-3----------- */
 
