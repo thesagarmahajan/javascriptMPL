@@ -22,3 +22,6 @@ function print(i) {
     },i*2000);
     console.log("EOF");
 }
+
+
+
