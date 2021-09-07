@@ -1,4 +1,20 @@
-console.log("Start");
+
+var  promise = new Promise((resolve, reject)=>{
+    
+    setTimeout(function(){
+        console.log("TIMEOUT COMPLETED");
+        resolve();
+    }, 3000);
+
+    
+});
+
+console.log("START");
+promise.then(()=>{
+    console.log("SOME DEPENDENT CODE");
+});
+console.log("Continue");
+console.log("END");
 
 // const mypromise = new Promise((resolve, reject)=>{
 //     resolve();
@@ -28,30 +44,30 @@ console.log("Start");
 // });
 
 
-const examplePromise = new Promise((resolve, reject)=>{
-    var somevar = [
-        {}
-    ];
+// const examplePromise = new Promise((resolve, reject)=>{
+//     var somevar = [
+//         {}
+//     ];
 
-    if(somevar.length>0){
-        resolve(somevar);
-    }
+//     if(somevar.length>0){
+//         resolve(somevar);
+//     }
 
-    else{
-        reject();
-    }
+//     else{
+//         reject();
+//     }
     
-});
+// });
 
-examplePromise.then((res)=>{
-    console.log("DATA FOUND");
-    console.log(res);
-}).finally(()=>{
-    console.log("EXECUTED SUCCESSFULLY");
-});
+// examplePromise.then((res)=>{
+//     console.log("DATA FOUND");
+//     console.log(res);
+// }).finally(()=>{
+//     console.log("EXECUTED SUCCESSFULLY");
+// });
 
-examplePromise.catch(()=>{
-    alert("NO Data found! Please try after some time.");
-});
+// examplePromise.catch(()=>{
+//     alert("NO Data found! Please try after some time.");
+// });
 
-console.log("END");
+// console.log("END");
