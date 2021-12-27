@@ -3,7 +3,10 @@ console.log("Printing in the console!");
 var firstTb = document.getElementById("tb1");
 var secondTb = document.getElementById("tb2");
 var ansDiplayer = document.getElementById("ansContainer");
-
+/*
+var addBtn = document.getElementById("buttonsId");
+addBtn.addEventListener("click", add);
+*/
 
 function add(){
     var ans = parseInt(firstTb.value)+parseInt(secondTb.value);
